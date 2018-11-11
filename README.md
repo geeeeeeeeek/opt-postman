@@ -17,7 +17,7 @@ _📮 Get email notification of OPT status & statistics every * days._
 3. Install dependencies:
 
    ```shell
-   pip3 install requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 4. Replace the parameters with your Gmail username and password:
