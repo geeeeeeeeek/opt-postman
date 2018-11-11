@@ -68,10 +68,9 @@ def compose_email():
 
     return "[OPT Update] " + title, status + statistics
 
-
-def send_email():
+def send_email(username, password):
     title, content = compose_email()
-    gm = Gmail("{REPLACE_WITH_YOUR_GMAIL}", "{REPLACE_WITH_YOUR_PASSWORD}")
+    gm = Gmail(username, password)
     gm.send_message(title, content)
 
-send_email()
+send_email("{REPLACE_WITH_YOUR_GMAIL}", "{REPLACE_WITH_YOUR_PASSWORD}")
